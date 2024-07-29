@@ -1,4 +1,6 @@
-#Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].
+#Faça um Programa que peça dois números e imprima a soma.
 
-numero = int(input("digite um número: "))
-print("o número digitado foi: ", numero)
+n1 = float(input("Digite um numero: "))
+n2 = float(input("Digite outro numero: "))
+
+print("A soma desses números é = ", n1 + n2)

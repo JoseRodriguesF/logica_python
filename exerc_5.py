@@ -1,7 +1,8 @@
-#Faça um Programa que converta metros para centímetros.
+#Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+import math
 
-metros = int(input("Digite quantos metros deseja converter em centímetros: "))
+raio = float(input("Digite o raio do circulo: "))
 
-centimetros = metros * 100
+resultado = math.pi * (raio*raio)
 
-print(f"{metros} metros = {centimetros} centímetros")
+print("A área do circulo é igual a: ", resultado)

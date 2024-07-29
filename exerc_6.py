@@ -1,8 +1,7 @@
-#Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
-import math
+#Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
 
-raio = float(input("Digite o raio do circulo: "))
+lados = int(input("Digite o tamanho dos lados do quadrado: "))
 
-resultado = math.pi * (raio*raio)
+area = lados*lados
 
-print("A área do circulo é igual a: ", resultado)
+print("Resultado: ", area*2)
