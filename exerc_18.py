@@ -1,20 +1,14 @@
-#Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+#Faça um Programa que peça dois números e imprima o maior deles.
 
-arquivo = float(input("Qual o tamanho em MB do arquivo que você deseja baixar: "))
-velocidade_link = float(input("Qual a velocidade em Mbps do seu link de internet: "))
+numero1 = float(input("Digite um numero: "))
+numero2 = float(input("Digite outro numero: "))
 
-tamanho_em_mb = arquivo * 8
+if numero1 > numero2:
+    print(numero1," é maior que ",numero2)
 
-tempo_segundos = tamanho_em_mb / velocidade_link
+elif numero2 > numero1: 
+    print(numero2,"é maior que numero ",numero1)
 
-tempo_minutos = tempo_segundos / 60
+else:
+    print("os numeros são iguais ")
 
-minutos_inteiros = int(tempo_minutos)
-
-decimais = tempo_minutos - minutos_inteiros
-
-if decimais >= 0.6:
-    minutos_inteiros += 1
-    decimais = 0
-
-print(f"O tempo estimado é de: {minutos_inteiros} Minutos")
